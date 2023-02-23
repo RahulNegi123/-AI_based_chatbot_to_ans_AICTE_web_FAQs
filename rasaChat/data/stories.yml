@@ -1,0 +1,120 @@
+version: "3.1"
+
+stories:
+
+- story: happy path
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: mood_great
+  - action: utter_happy
+
+- story: sad path 1
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: mood_unhappy
+  - action: utter_cheer_up
+  - action: utter_did_that_help
+  - intent: affirm
+  - action: utter_happy
+
+- story: sad path 2
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: mood_unhappy
+  - action: utter_cheer_up
+  - action: utter_did_that_help
+  - intent: deny
+  - action: utter_goodbye
+
+- story: Approval Process
+  steps:
+  - intent: Approval_Process
+  - action: utter_Approval_Process
+
+- story: new user Id and password
+  steps:
+  - intent: New_UserIDPassword
+  - action: utter_New_UserIDPassword
+
+- story: forgotten password
+  steps:
+  - intent: forgotten_password
+  - action: utter_forgotten_password
+  
+- story: is UserField mandatory
+  steps:
+  - intent: UserField_mandatory
+  - action: utter_UserField_mandatory
+  
+- story: error message
+  steps:
+  - intent: error_message
+  - action: utter_UserField_mandatory
+  
+- story: apply for approval
+  steps:
+  - intent: apply_Approval_Process
+  - action: utter_apply_Approval_Process
+  
+- story: generate report
+  steps:
+  - intent: generate_report
+  - action: utter_generate_report
+  
+- story: delete old faculty
+  steps:
+  - intent: delete_old_faculty
+  - action: utter_delete_old_faculty
+
+- story: Aadhaar PAN mandatory
+  steps:
+  - intent: AadhaarPAN_mandatory
+  - action: utter_AadhaarPAN_mandatory
+  
+- story: transfer faculty record
+  steps:
+  - intent: transfer_faculty_record
+  - action: utter_transfer_faculty_record
+  
+- story: update faculty details
+  steps:
+  - intent: update_faculty_details
+  - action: utter_update_faculty_details
+  
+- story: Payment amount not updated
+  steps:
+  - intent: Payment_amountNOTupdated
+  - action: utter_Payment_amountNOTupdated
+  
+- story: not Directing to Payment Gateway
+  steps:
+  - intent: notDirecting_PaymentGateway
+  - action: utter_notDirecting_PaymentGateway
+  
+- story: Grievance query
+  steps:
+  - intent: Grievance_query
+  - action: utter_Grievance_query
+  
+- story: application not submitted
+  steps:
+  - intent: applicationNot_submitted
+  - action: utter_applicationNot_submitted
+  
+- story: change Details
+  steps:
+  - intent: changeDetails
+  - action: utter_changeDetails
+  
+- story: reopen Application
+  steps:
+  - intent: reopen_Application
+  - action: utter_reopen_Application
+  
+- story: did Not Received Password registered Email
+  steps:
+  - intent: didNoReceivePassword_registeredEmail
+  - action: utter_didNoReceivePassword_registeredEmail

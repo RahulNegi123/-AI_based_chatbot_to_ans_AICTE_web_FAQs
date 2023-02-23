@@ -1,0 +1,106 @@
+version: "3.1"
+
+intents:
+  - greet
+  - goodbye
+  - affirm
+  - deny
+  - mood_great
+  - mood_unhappy
+  - bot_challenge
+  - Approval_Process
+  - New_UserIDPassword
+  - forgotten_password
+  - UserField_mandatory
+  - error_message
+  - apply_Approval_Process
+  - generate_report
+  - delete_old_faculty
+  - AadhaarPAN_mandatory
+  - transfer_faculty_record
+  - update_faculty_details
+  - Payment_amountNOTupdated
+  - notDirecting_PaymentGateway
+  - Grievance_query
+  - applicationNot_submitted
+  - changeDetails
+  - reopen_Application
+  - didNoReceivePassword_registeredEmail
+
+responses:
+  utter_greet:
+  - text: "Hey! How are you?"
+
+  utter_cheer_up:
+  - text: "Here is something to cheer you up:"
+    image: "https://i.imgur.com/nGF1K8f.jpg"
+
+  utter_did_that_help:
+  - text: "Did that help you?"
+
+  utter_happy:
+  - text: "Great, carry on!"
+
+  utter_goodbye:
+  - text: "Bye"
+
+  utter_iamabot:
+  - text: "I am a bot, powered by Rasa."
+  
+  utter_Approval_Process:
+  - text: "Information related to Approval Process 2020-21 available on AICTE Website's Homepage>Quick Links>Approval Process 2020-21."
+
+  utter_New_UserIDPassword:
+  - text: "Please click on Sign Up link on AICTE Web-portal or go to link http://portal.aicte-india.org/partnerportal_enu. User Manual for Obtaining USERNAME and PASSWORD @https://aicte-india.org/bureaus/approval/ap_2020-21"
+
+  utter_forgotten_password:
+  - text: "Please refer User Manual for Forgotten Password available @ https://aicte-india.org/bureaus/approval/ap_2020-21"
+
+  utter_UserField_mandatory:
+  - text: "No, User Id is NOT mandatory. Only Permanent Institute Id is required for existing institute. In case of new institute (received Letter of Approval(LOA) in previous year) can enter Current Application Id."
+
+  utter_error_message:
+  - text: "Recheck the login credentials. Confirm whether someone else has logged in with the same credentials (Please note that per institute only ONE session is allowed. Hence, if someone tries for 2nd session then again invalid user name and password message will popup). If no session is live and still getting an invalid username and password message, then the password might be incorrect. In such cases, you can Request for forgot password."
+
+  utter_apply_Approval_Process:
+  - text: "Please login to AICTE Webportal using your institute’s login credentials then click on Approval Process icon. Follow the instructions given in User Manuals/Videos and apply accordingly. For more information, please go through Approval Process Handbook 2020-21."
+
+  utter_generate_report: 
+  - text: "Please refer “User Manual for Report Generation” to generate Reports."
+
+  utter_delete_old_faculty: 
+  - text: "Faculty record cannot be deleted. Faculty can be marked as “Duplicate” or “Left the Institute” under HOI & Faculty Details tab."
+
+  utter_AadhaarPAN_mandatory: 
+  - text: "Yes."
+  
+  utter_transfer_faculty_record: 
+  - text: "This facility is available under HOI & Faculty tab. Before transferring any individual faculty record from one institute to other institute, the faculty should be compulsorily marked as left the institute in the previous institute."
+
+  utter_update_faculty_details:
+  - text: "Please follow the User Manual available @ https://aicte-india.org/bureaus/approval/ap_2020-21 for uploading faculty details by import method."
+
+  utter_Payment_amountNOTupdated:
+  - text: "Generally, payment receipt gets updated immediately. In case, your payment receipt is not updated then click on View Transaction Button under Payment tab. Otherwise, it will get updated in 48 to 72 working hours (2 to 3 working days). In case it is not updated even after that, please raise grievance with transaction details (Transaction Id generated while making the payment) through Online Grievance Redressal form. Link is available on Approval Process 2020-21 page."
+
+  utter_notDirecting_PaymentGateway:
+  - text: "Please check whether your application has been submitted successfully or not. If submitted, then allow Popups for AICTE Website through Web browser URL."
+
+  utter_Grievance_query:
+  - text: "Raise a Grievance via grievance form available at https://www.facilities.aicteindia.org/Approval Process/apformEmail.php. NOTE: Any grievance related to Approval Process 2020-21 communicated to any of the official e-mail(s) of AICTE (other than through Online Grievance rederessal) will NOT be entertained."
+
+  utter_applicationNot_submitted: 
+  - text: "No, Institute need to apply afresh for getting login credentials."
+
+  utter_changeDetails: 
+  - text: "You may contact the Approval Bureau or Regional Office."
+
+  utter_reopen_Application: 
+  - text: "If you have not created any payment record under Payment tab then you can re-open the submitted application only once by clicking on “re-open application” button available under Attachments and Submit tab. Note: After re-open, the application should be resubmitted. Otherwise application will be treated as “Application Not Submitted”."
+
+  utter_didNoReceivePassword_registeredEmail: 
+  - text: "Institute need to submit the Affidavit-1 in the respective Regional Office. Regional Officer will flag the Affidavit Received against your request on web portal. Then password will be sent to the institute’s registered email id. Please check the Spam Folder also in your mailbox for forgot password email. In case of any issue, you may raise your grievance online by Grievance link available @https://aicte-india.org/bureaus/approval/ap_2020-21"
+
+session_config:
+  session_expiration_time: 60
+  carry_over_slots_to_new_session: true

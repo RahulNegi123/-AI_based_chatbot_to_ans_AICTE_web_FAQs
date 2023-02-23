@@ -1,0 +1,215 @@
+version: "3.1"
+
+nlu:
+- intent: greet
+  examples: |
+    - hey
+    - hello
+    - hi
+    - hello there
+    - good morning
+    - good evening
+    - moin
+    - hey there
+    - let's go
+    - hey dude
+    - goodmorning
+    - goodevening
+    - good afternoon
+
+- intent: goodbye
+  examples: |
+    - cu
+    - good by
+    - cee you later
+    - good night
+    - bye
+    - goodbye
+    - have a nice day
+    - see you around
+    - bye bye
+    - see you later
+
+- intent: affirm
+  examples: |
+    - yes
+    - y
+    - indeed
+    - of course
+    - that sounds good
+    - correct
+
+- intent: deny
+  examples: |
+    - no
+    - n
+    - never
+    - I don't think so
+    - don't like that
+    - no way
+    - not really
+
+- intent: mood_great
+  examples: |
+    - perfect
+    - great
+    - amazing
+    - feeling like a king
+    - wonderful
+    - I am feeling very good
+    - I am great
+    - I am amazing
+    - I am going to save the world
+    - super stoked
+    - extremely good
+    - so so perfect
+    - so good
+    - so perfect
+
+- intent: mood_unhappy
+  examples: |
+    - my day was horrible
+    - I am sad
+    - I don't feel very well
+    - I am disappointed
+    - super sad
+    - I'm so sad
+    - sad
+    - very sad
+    - unhappy
+    - not good
+    - not very good
+    - extremly sad
+    - so saad
+    - so sad
+
+- intent: bot_challenge
+  examples: |
+    - are you a bot?
+    - are you a human?
+    - am I talking to a bot?
+    - am I talking to a human?
+    
+- intent: Approval_Process
+  examples: |
+    - Where I can find the information related to Approval Process?
+    - What is the Approval Process. 
+    - Give information regarding Approval Process.
+
+- intent: New_UserIDPassword
+  examples: |
+    - How can I get New User-id and password (login credentials) for AICTE Web Portal?
+    - Give me user ID.
+    - Give me password.
+    - Give me user ID and password.
+    - Give me ID and password.
+
+- intent: forgotten_password
+  examples: |
+    - I have forgotten password for logging in AICTE Web Portal. What is the procedure to recover this?
+    - Forgotten password
+    - I can't remember password.
+    - Give me a new password.
+
+- intent: UserField_mandatory
+  examples: |
+    - Is User Id field mandatory for 'Forgot Password' form?
+    - User Id for forgot password
+    - forgot my user Id, recover password
+    - recover password without Id.
+
+- intent: error_message
+  examples: |
+    - When I try to login with Institute's Credentials, error message 'Invalid Username and Password' is displayed. What should I do?
+    - Invalid Username and Password
+    - Error Invalid Username and Password
+    - how to solve the error Invalid Username and Password
+
+- intent: apply_Approval_Process
+  examples: |
+    - How can I apply for Approval Process 2020-21 for our institute.
+    - apply for Approval Process 2020-21.
+    - approval apply
+    - approval for our institute.
+
+- intent: generate_report
+  examples: |
+    - I am not able to generate report?
+    - how to generate report.
+    - generate report
+    - generate report not working
+
+- intent: delete_old_faculty
+  examples: |
+    - How to delete old faculty details?
+    - delete old faculty details
+    - How to remove old faculty details?
+    - remove old faculty details?
+
+- intent: AadhaarPAN_mandatory
+  examples: |
+    - Is Aadhaar/PAN details mandatory to update faculty details in AICTE Web Portal?
+    - What documents are required.
+    - document advisor
+    - is aadhar  card required
+    - is PAN required
+
+- intent: transfer_faculty_record
+  examples: |
+    - How to transfer faculty record(individual) from one institute to another institute?
+    - transfer faculty record
+    - transfer faculty 
+
+- intent: update_faculty_details
+  examples: |
+    - How to update/add the faculty details by import method?
+    - update faculty details
+    - update faculty details by import 
+
+- intent: Payment_amountNOTupdated
+  examples: |
+    - I have made Online Payment but amount is not updated in portal.
+    - amount not updated
+    - transaction not showing
+
+- intent: notDirecting_PaymentGateway
+  examples: |
+    - I am not able to make payment because AICTE Website is not directing to Payment Gateway.
+    - payment Gateway not showing.
+    - payment Gateway.
+    - payment not working
+
+- intent: Grievance_query
+  examples: |
+    - Where to send the queries related to portal, payment and approval related issues for the Academic Year 2020-21?
+    - send Grievance query
+    - give feedback.
+    - register complaint.
+    - bad service
+
+- intent: applicationNot_submitted
+  examples: |
+    - Our Institution was allotted a User ID last year as a new Institution.
+    - application could not be submitted
+    - can i use same user id for two application
+    - use same user ID for new application.
+
+- intent: changeDetails
+  examples: |
+    - We want to change details which are non-editable / read-only?
+    - change non-editable data.
+    - modify details.
+    - can't edit modify details.
+
+- intent: reopen_Application
+  examples: |
+    - By mistake, I have submitted my application. Is it possible to reopen the application once again to update the few details?
+    - reopen application
+    - update details after submission.
+    - edit details after submission.
+
+- intent: didNoReceivePassword_registeredEmail
+  examples: |
+    - I have applied for forgot password but still I did not receive password on my registered email?
+    - did not receive reset password on email.
+    - reset password not working
