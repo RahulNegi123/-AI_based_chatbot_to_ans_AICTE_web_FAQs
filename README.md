@@ -1,1 +1,3 @@
 # -AI_based_chatbot_to_ans_AICTE_web_FAQs
+
+My task in the internship was to build an Artificial Intelligence based chatbot to answer frequently asked questions on the All India Council for Technical Education (AICTE) website.  I have implemented the system using RASA, which is an open-source machine learning framework to build contextual AI assistants and chatbots in text and voice. The chatbot is voice enabled so the user can ask queries by speaking and get a voice response from the bot. I have used python to make the chatbot voice enabled. The project is developed on a Linux system due to its wide compatibility for developer tools. I used PyCharm IDE & Sublime Text to write & debug the software.
